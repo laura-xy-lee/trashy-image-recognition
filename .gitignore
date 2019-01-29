@@ -1,0 +1,10 @@
+.idea/
+.DS_Store
+_image-feature-extraction/
+_test_images/
+_watson-waste-sorter/
+apiKey.json
+venv/
+models/
+images/
+
