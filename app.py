@@ -1,15 +1,13 @@
-# from flask_cors import CORS
-import subprocess
 import json
 from itertools import chain
 from werkzeug.datastructures import FileStorage
 
 from flask import Flask, render_template, request
 
-from recyclables_classifier.recyclables_classifier import classify
+from models.tutorials.image.imagenet.custom_classify_image import custom_classify_image
+from classify_trash.classify_recyclable_trash import classify_recyclable_trash
 
 app = Flask(__name__)
-# CORS(app)
 
 
 @app.route("/", methods=['GET'])
@@ -21,50 +19,30 @@ def main():
 @app.route("/predict", methods=["POST"])
 def predict():
     """Makes prediction"""
+    # Save client uploaded image to path
     file_obj = request.files['file']
-    file = None
-    with open('images/client_image.jpeg', 'rb') as fp:
+    with open('images/client_image.jpeg', 'rb'):
         file = FileStorage(file_obj)
     file.save('images/client_image.jpeg')
 
-    bash_command = "python models/tutorials/image/imagenet/classify_image.py --image_file=images/client_image.jpeg"
-    result = subprocess.check_output(bash_command.split())
+    # Get Tensorflow inception-v3's top 5 prediction
+    image_predictions = custom_classify_image(image_path='images/client_image.jpeg')
 
-    # Returns best guess by tensorflow
-    best_guess = []
-    for i in str(result).split("("):
-        if len(i.split(")")) > 1:
-            guess = i.split(")")[1]
-        else:
-            guess = i
+    # Classify if recyclable or not
+    image_labels = [i[1] for i in image_predictions]
+    image_labels_hack = image_labels[0]
 
-        best_guess.append(guess)
+    image_labels_melt = [i.split(',') for i in image_labels]
+    image_labels_melt = list(chain.from_iterable(image_labels_melt))
 
-    # Format best guess
-    best_guess = [g.replace("b'", "") for g in best_guess]
-    best_guess = [g.replace('b"', "") for g in best_guess]
-    best_guess = [g.replace("\\n", "") for g in best_guess]
-    best_guess = [g.replace("'", "") for g in best_guess]
-    best_guess = [g.replace('"', "") for g in best_guess]
-    best_guess = list(filter(None, best_guess))
+    recyclable_classification = classify_recyclable_trash(image_labels_melt)
 
-    formatted_best_guess_list = []
-    for guess in best_guess:
-        formatted_guess = guess.strip().upper()
-        formatted_best_guess_list.append(formatted_guess)
-    formatted_best_guess = " or ".join(formatted_best_guess_list)
-
-    vowels = ('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U')
-    if formatted_best_guess.startswith(vowels):
-        formatted_best_guess = "an " + formatted_best_guess
-    else:
-        formatted_best_guess = "a " + formatted_best_guess
-
-    results = classify(item_label=formatted_best_guess_list)
     return json.dumps({
-        "output": formatted_best_guess,
-        "material_type": results.get("material_type"),
-        "instruction": results.get("instruction")
+        # "prediction": image_labels,
+        "prediction": image_labels_hack,
+        "material": recyclable_classification.get("material"),
+        "waste_action": recyclable_classification.get("action"),
+        "instruction": recyclable_classification.get("special_instructions")
     })
 
 
