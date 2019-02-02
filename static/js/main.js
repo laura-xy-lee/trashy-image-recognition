@@ -58,7 +58,7 @@ const renderResult = (result) => {
 
 	if (result.material != "Unknown") {
 		// add link to map
-		results.innerHTML += `<br/><br/><form action="https://trashy-demo.herokuapp.com">
+		results.innerHTML += `<br/><br/><form action="https://trashy-map.herokuapp.com">
 			<input type="submit" value="Find your nearest recycling bin" />
 			</form>`
 	}
