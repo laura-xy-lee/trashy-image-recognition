@@ -5,5 +5,5 @@ _test_images/
 _watson-waste-sorter/
 apiKey.json
 venv/
-images/
+#images/
 
