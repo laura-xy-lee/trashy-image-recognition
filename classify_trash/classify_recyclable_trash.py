@@ -86,7 +86,8 @@ for item in nea_recyclables:
     elif ("e-waste" in item["item_name"]
           and (recycle_text_1 in item["item_name"]
                or recycle_text_2 in item["item_name"])):
-        item["action"] = "E-waste"
+        item["action"] = "recyclable"
+        item["material"] = "e-waste"
         item["special_instructions"] = "None"
         item["item_name"] = (item["item_name"]
                              .split(recycle_text_1, 1)[0]
@@ -97,7 +98,8 @@ for item in nea_recyclables:
     elif ("lighting waste" in item["item_name"]
           and (recycle_text_1 in item["item_name"]
                or recycle_text_2 in item["item_name"])):
-        item["action"] = "Lighting waste"
+        item["action"] = "recyclable"
+        item["material"] = "Lighting waste"
         item["special_instructions"] = "None"
         item["item_name"] = (item["item_name"]
                              .split(recycle_text_1, 1)[0]
@@ -140,5 +142,5 @@ def classify_recyclable_trash(trash: Sequence,
 
     return {'material': 'Unknown',
             'item_name': 'Unknown',
-            'action': 'Unknown',
+            'action': 'Non-Recyclable',
             'special_instructions': 'None'}
