@@ -3,14 +3,14 @@ from itertools import chain
 import os
 from werkzeug.datastructures import FileStorage
 
-from flask import Flask, render_template, request
-from flask_cors import CORS
+from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS, cross_origin
 
 from models.tutorials.image.imagenet.custom_classify_image import custom_classify_image
 from classify_trash.classify_recyclable_trash import classify_recyclable_trash
 
 app = Flask(__name__)
-app.config['CORS_HEADERS'] = ['Content-Type' 'Access-Control-Allow-Origin']
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 cors = CORS(app, resources={r"/predict": {"origins": "https://trashy-recyclingmap.surge.sh/"}})
 
@@ -22,6 +22,7 @@ def main():
 
 
 @app.route("/predict", methods=["POST"])
+@cross_origin(origin='https://trashy-recyclingmap.surge.sh/', headers=['Content-Type','Access-Control-Allow-Origin'])
 def predict():
     """Makes prediction"""
     # Save client uploaded image to path
@@ -42,7 +43,8 @@ def predict():
 
     recyclable_classification = classify_recyclable_trash(image_labels_melt)
 
-    return json.dumps({
+    return jsonify({
+	# json.dumps({
         # "prediction": image_labels,
         "prediction": image_labels_hack,
         "material": recyclable_classification.get("material"),
