@@ -11,7 +11,7 @@ from classify_trash.classify_recyclable_trash import classify_recyclable_trash
 
 app = Flask(__name__)
 
-# app.config['CORS_HEADERS'] = 'Content-Type'
+# app.config['CORS_HEADERS'] = ['Content-Type', 'Access-Control-Allow-Origin']
 # cors = CORS(app, resources={r"/predict": {"origins": "https://trashy-recyclingmap.surge.sh/"}})
 
 
@@ -22,7 +22,7 @@ def main():
 
 
 @app.route("/predict", methods=["POST"])
-@cross_origin(origin='https://trashy-recyclingmap.surge.sh/', headers=['Content-Type','Access-Control-Allow-Origin'])
+@cross_origin(origin=os.environ['CORS_URL'], headers=['Content-Type','Access-Control-Allow-Origin'])
 def predict():
     """Makes prediction"""
     # Save client uploaded image to path
