@@ -10,9 +10,9 @@ from models.tutorials.image.imagenet.custom_classify_image import custom_classif
 from classify_trash.classify_recyclable_trash import classify_recyclable_trash
 
 app = Flask(__name__)
-app.config['CORS_HEADERS'] = 'Content-Type'
 
-cors = CORS(app, resources={r"/predict": {"origins": "https://trashy-recyclingmap.surge.sh/"}})
+# app.config['CORS_HEADERS'] = 'Content-Type'
+# cors = CORS(app, resources={r"/predict": {"origins": "https://trashy-recyclingmap.surge.sh/"}})
 
 
 @app.route("/", methods=['GET'])
