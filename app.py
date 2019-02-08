@@ -4,14 +4,16 @@ import os
 from werkzeug.datastructures import FileStorage
 
 from flask import Flask, render_template, request
-from flask_cors import CORS, cross_origin
+from flask_cors import CORS
 
 from models.tutorials.image.imagenet.custom_classify_image import custom_classify_image
 from classify_trash.classify_recyclable_trash import classify_recyclable_trash
 
 app = Flask(__name__)
-app.config['CORS_HEADERS'] = 'Content-Type'
-cors = CORS(app, resources={r"/predict": {"origins": os.environ['CORS_URL']}})
+app.config['CORS_HEADERS'] = ['Content-Type' 'Access-Control-Allow-Origin']
+
+cors = CORS(app, resources={r"/predict": {"origins": "https://trashy-recyclingmap.surge.sh/"}})
+
 
 @app.route("/", methods=['GET'])
 def main():
