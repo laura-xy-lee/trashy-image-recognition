@@ -1,10 +1,17 @@
 .idea/
 .DS_Store
+
 _image-feature-extraction/
 _test_images/
 _watson-waste-sorter/
+
+# Recycling data
+/classify_trash/data
+!/classify_trash/output/.gitkeep
+
 apiKey.json
+
 venv/
-# images/
+
 *.pyc
 __pycache__

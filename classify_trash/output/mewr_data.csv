@@ -1,0 +1,76 @@
+item,is_recyclable,remarks,group
+Printed paper (Glossy and non-glossy),True,,Paper
+Writing paper,True,,Paper
+Newspaper,True,,Paper
+Flyer (Glossy and non-glossy),True,,Paper
+Brochure (Glossy and non-glossy),True,,Paper
+Magazine (Glossy and non-glossy),True,,Paper
+Book,True,Donate if it is in good condition,Paper
+Telephone directory,True,,Paper
+Envelope (With and without plastic window),True,,Paper
+Red packet,True,,Paper
+Namecard,True,,Paper
+Calendar,True,,Paper
+Greeting card,True,,Paper
+Gift wrapping paper,True,,Paper
+Shredded paper,True,,Paper
+Paper receipt,True,,Paper
+Carton box,True,Please flatten,Paper
+Paper packaging (e.g. printed paper box etc),True,Please flatten,Paper
+Egg tray,True,,Paper
+"Beverage carton (e.g. milk, juice and drink packet)",True,Please empty and rinse when necessary. Please flatten,Paper
+Paper towel and toilet roll tube,True,,Paper
+Tissue box,True,Please flatten,Paper
+Paper bag,True,,Paper
+"Used paper disposables (e.g. paper cup, plate etc)",False,Dispose as general waste,Paper
+Tissue paper,False,Dispose as general waste,Paper
+Paper towel,False,Dispose as general waste,Paper
+Toilet paper,False,Dispose as general waste,Paper
+Disposable wooden chopstick,False,Dispose as general waste,Paper
+Wax paper,False,Dispose as general waste,Paper
+"Paper packaging that are contaminated with food (eg pizza box, paper bag for pastries)",False,Dispose as general waste,Paper
+"Plastic bottle/container - Food or Beverage (e.g. PET, PP or PS bottles/container, carbonated and non-carbonated drinks etc)",True,Please empty and rinse when necessary,Plastics
+"Plastic bottle/container - Non-food (e.g. shampoo, bodywash, facial cleanser, detergent etc)",True,Please empty and rinse when necessary,Plastics
+CD and CD casing,True,,Plastics
+Plastic bag (except for oxo- and bio-degradable bags),True,,Plastics
+"Plastic film/flexible packaging (e.g. magazine wrapper, film packaging for packet drinks, bubble wrap etc.)",True,,Plastics
+Plastic packaging (e.g. sliced bread bag and egg trays),True,Please empty contents,Plastics
+Plastic clothes hanger,True,,Plastics
+Non-polystyrene foam takeaway food container,True,Please empty and rinse when necessary,Plastics
+"Polystyrene foam product (e.g. Styrofoam cup, clam shell container)",False,Dispose as general waste,Plastics
+Plastic disposables - cutlery and crockery,False,Dispose as general waste,Plastics
+"Plastic packaging with foil (e.g. potato chip bags, empty blister pack etc.)",False,Dispose as general waste,Plastics
+Oxo- and bio-degradable bags,False,Dispose as general waste,Plastics
+Drinking straw,False,Dispose as general waste,Plastics
+Cassette and video tape,False,Dispose as general waste,Plastics
+Plastic packaging contaminated with food,False,Dispose as general waste,Plastics
+"Melamine products (e.g. Melamine cups, melamine plates etc)",False,Dispose as general waste,Plastics
+"Glass bottle - Beverage (e.g. carbonated drink, beer, wine)",True,Please empty and rinse when necessary,Glass
+"Glass bottle - Food (e.g. sauce and condiment bottle, jam spread etc)",True,Please empty and rinse when necessary,Glass
+Glass bottle - Cosmetic,True,Please empty and rinse when necessary,Glass
+Glass bottle - Medicine and supplement,True,Please empty and rinse when necessary,Glass
+"Glassware - Cup, plate",True,,Glass
+Borosilicate or Pyrex glassware (e.g. bakeware),False,Dispose as general waste,Glass
+Windows,False,Dispose as general waste,Glass
+Mirror,False,Donate if it is in good condition,Glass
+"Ceramic product (e.g. ceramic plate, tea pot etc)",False,Donate if it is in good condition,Glass
+Light bulb,True,Can be recycled at specific collection points,Glass
+"Metal can - Beverage (e.g. carbonated drink, beer etc)",True,Please empty and rinse when necessary,Metal
+"Metal can - Food (e.g. biscuit and food tin, canned food etc)",True,Please empty and rinse when necessary,Metal
+Metal bottle cap,True,,Metal
+Aerosol can,True,Please empty contents,Metal
+Clean aluminium tray and foil,True,Please rinse when necessary,Metal
+Metal container - Non-food (e.g. paint container etc),True,Please empty contents,Metal
+"IT accessories (e.g. cable, mouse, keyboard etc)",True,Can be recycled at specific collection points,Others
+"Electronic waste (e.g. Used mobile phone, tablet, laptop etc)",True,Can be recycled at specific collection points,Others
+Rechargable battery,True,Can be recycled at specific collection points,Others
+Household battery,False,Dispose as general waste,Others
+"Old items which are not in good condition (e.g. clothes, shoes, bag, soft toy, umbrella etc)",False,Dispose as general waste,Others
+"Old items which are in good condition (e.g. clothes, shoes, bag, soft toy, umbrella, spectacle etc)",False,Donate if it is in good condition,Others
+Food waste,False,Dispose as general waste,Others
+Leftover medicine,False,Dispose as general waste,Others
+Diaper and sanitary pad,False,Dispose as general waste,Others
+Stationery - Pen and pencil,False,Donate if it is in good condition,Others
+Plant and horticultural waste,True,Only for landed estates: bag and place outside your unit on collection days,Others
+Luggage bag,False,Donate if it is in good condition,Others
+"Bulky waste (e.g. Furniture, standing fan etc)",False,Donate if it is in good conditionContact Town council to remove from your residential premises,Others

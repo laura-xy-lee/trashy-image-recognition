@@ -1,0 +1,81 @@
+item,remarks,is_recyclable,group
+Books,Donate to charity or give it away if possible.,True,Paper
+Brochure,Glossy and non-glossy included.,True,Paper
+Calendar,-,True,Paper
+Cardboard box packaging,Please flatten if possible.,True,Paper
+Carton box,Please flatten if possible.,True,Paper
+Drink packet,Should be emptied. Please rinse if necessary and flatten if possible.,True,Paper
+Egg tray,-,True,Paper
+Envelope,With or without plastic window included.,True,Paper
+Flyer,Glossy and non-glossy included.,True,Paper
+Gift wrapping paper,-,True,Paper
+Greeting card,-,True,Paper
+Juice carton,Should be emptied. Please rinse if necessary and flatten if possible.,True,Paper
+Magazine,Glossy and non-glossy included.,True,Paper
+Milk carton,Should be emptied. Please rinse if necessary and flatten if possible.,True,Paper
+Namecards,-,True,Paper
+Newspaper,-,True,Paper
+Paper receipts,-,True,Paper
+Paper towel tubes and toilet roll tubes,-,True,Paper
+Printed paper,-,True,Paper
+Red packet,-,True,Paper
+Shredded paper,-,True,Paper
+Telephone directory,-,True,Paper
+Tissue box,Please flatten if possible.,True,Paper
+Writing paper,-,True,Paper
+Disposable chopsticks,-,False,Paper
+Disposable paper cups and plates,-,False,Paper
+Paper towel,-,False,Paper
+Paper wrapper for food,-,False,Paper
+Tissue paper,-,False,Paper
+Toilet paper,-,False,Paper
+Wax paper,-,False,Paper
+Beverage bottle,Should be emptied. Please rinse if necessary.,True,Plastics
+Bodywash and shampoo bottles,Should be emptied. Please rinse if necessary.,True,Plastics
+Bottle for food,Should be emptied. Please rinse if necessary.,True,Plastics
+Bread wrapper packaging,Should be clean and emptied.,True,Plastics
+CD and casing,-,True,Plastics
+Detergent bottle,Should be emptied. Please rinse if necessary.,True,Plastics
+Disposable cups (only for PET and PP plastics),Should be emptied. Please rinse if necessary. Check the triangle plastic code usually printed on the cup - 1 for PET and 5 for PP.,True,Plastics
+Magazine wrapper,-,True,Plastics
+Plastic bag,Should be clean and emptied.,True,Plastics
+"Plastic containers, trays and tubs for food (non-polystyrene)",Should be emptied. Please rinse if necessary.,True,Plastics
+Toiletries containers,Should be emptied. Please rinse if necessary.,True,Plastics
+Takeaway food containers (styrofoam or PS plastics),Check the triangle plastic code usually printed on the container - 6 for PS.,False,Plastics
+Disposable cups (only for styrofoam or PS plastics),Check the triangle plastic code usually printed on the cup - 6 for PS.,False,Plastics
+Disposable plates and bowls,-,False,Plastics
+Disposable cutlery and utensils,-,False,Plastics
+Straws,-,False,Plastics
+Cassette and video tapes,-,False,Plastics
+Plastic film packaging for food,-,False,Plastics
+Aerosol cans,Should be emptied.,True,Metal
+Aluminium trays and foil,Should be clean.,True,Metal
+"Biscuit, milk and food tins",Should be emptied. Please rinse if necessary.,True,Metal
+Drink cans,Should be emptied. Please rinse if necessary.,True,Metal
+Food cans,Should be emptied. Please rinse if necessary.,True,Metal
+Paint cans,Should be empty and dry.,True,Metal
+Beverage bottles,Should be emptied. Please rinse if necessary.,True,Glass
+Cosmetic bottles,Should be emptied. Please rinse if necessary.,True,Glass
+Glass cups and plates,-,True,Glass
+Jam and spread bottles,Should be emptied. Please rinse if necessary.,True,Glass
+Medicine and supplement bottles,Should be emptied. Please rinse if necessary.,True,Glass
+Sauce and condiment bottles,Should be emptied. Please rinse if necessary.,True,Glass
+Ceramics,-,False,Glass
+Light bulbs,Recycle fluorescent lamps and light bulbs via lamp recycling bins.,False,Glass
+Mirror,-,False,Glass
+Windows,-,False,Glass
+Old clothes (in good condition),Donate to charity or give it away if possible. Bag before depositing into the recycling bin.,True,Others
+Bags,Donate to charity or give it away.,False,Others
+Diapers and sanitary pads,-,False,Others
+Electrical and electronic items,Recycle using e-waste recycling bins.,False,Others
+Food waste,-,False,Others
+Furniture,Donate to charity or ask town council cleaners to remove.,False,Others
+Household batteries,"Singapore has imposed restrictions on the mercury content in mercury oxide, zinc carbon and alkaline batteries, so used household batteries can be safely discarded with normal waste - NEA.",False,Others
+Leftover medicine,-,False,Others
+Pens and pencils,-,False,Others
+Plants and horticultural waste,Garden waste is only collected from landed properties and not HDB estates under the National Recycling Programme.,False,Others
+Rechargeable batteries,Recycle using e-waste recycling bins.,False,Others
+Shoes,-,False,Others
+Soft toy,Donate to charity or give it away.,False,Others
+Spectacles,Donate to charity.,False,Others
+Wood items,-,False,Others

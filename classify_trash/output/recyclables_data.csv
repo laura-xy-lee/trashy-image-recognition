@@ -1,0 +1,156 @@
+group,is_recyclable,item,remarks
+Glass,True,Medicine and supplement bottles,Should be emptied. Please rinse if necessary.
+Glass,True,"Glass bottle - Food (e.g. sauce and condiment bottle, jam spread etc)",Please empty and rinse when necessary
+Glass,True,Glass bottle - Cosmetic,Please empty and rinse when necessary
+Glass,True,Glass bottle - Medicine and supplement,Please empty and rinse when necessary
+Glass,True,Beverage bottles,Should be emptied. Please rinse if necessary.
+Glass,True,Cosmetic bottles,Should be emptied. Please rinse if necessary.
+Glass,True,Glass cups and plates,-
+Glass,True,Jam and spread bottles,Should be emptied. Please rinse if necessary.
+Glass,True,Sauce and condiment bottles,Should be emptied. Please rinse if necessary.
+Glass,True,"Glass bottle - Beverage (e.g. carbonated drink, beer, wine)",Please empty and rinse when necessary
+Glass,False,Light bulbs,Recycle fluorescent lamps and light bulbs via lamp recycling bins.
+Glass,False,Mirror,-
+Glass,False,Windows,-
+Glass,False,Ceramics,-
+Glass,False,Borosilicate or Pyrex glassware (e.g. bakeware),Dispose as general waste
+Glass,False,Windows,Dispose as general waste
+Glass,False,Mirror,Donate if it is in good condition
+Glass,False,"Ceramic product (e.g. ceramic plate, tea pot etc)",Donate if it is in good condition
+Glass,True,Light bulb,Can be recycled at specific collection points
+Glass,True,"Glassware - Cup, plate",
+Metal,True,Metal container - Non-food (e.g. paint container etc),Please empty contents
+Metal,True,Clean aluminium tray and foil,Please rinse when necessary
+Metal,True,Aerosol cans,Should be emptied.
+Metal,True,Aluminium trays and foil,Should be clean.
+Metal,True,"Biscuit, milk and food tins",Should be emptied. Please rinse if necessary.
+Metal,True,Drink cans,Should be emptied. Please rinse if necessary.
+Metal,True,Paint cans,Should be empty and dry.
+Metal,True,Aerosol can,Please empty contents
+Metal,True,Metal bottle cap,
+Metal,True,"Metal can - Food (e.g. biscuit and food tin, canned food etc)",Please empty and rinse when necessary
+Metal,True,"Metal can - Beverage (e.g. carbonated drink, beer etc)",Please empty and rinse when necessary
+Metal,True,Food cans,Should be emptied. Please rinse if necessary.
+Others,False,"Old items which are in good condition (e.g. clothes, shoes, bag, soft toy, umbrella, spectacle etc)",Donate if it is in good condition
+Others,False,Food waste,Dispose as general waste
+Others,False,"Old items which are not in good condition (e.g. clothes, shoes, bag, soft toy, umbrella etc)",Dispose as general waste
+Others,False,Wood items,-
+Others,False,Leftover medicine,Dispose as general waste
+Others,True,"IT accessories (e.g. cable, mouse, keyboard etc)",Can be recycled at specific collection points
+Others,False,Household battery,Dispose as general waste
+Others,False,Diaper and sanitary pad,Dispose as general waste
+Others,True,Rechargable battery,Can be recycled at specific collection points
+Others,True,Plant and horticultural waste,Only for landed estates: bag and place outside your unit on collection days
+Others,False,Soft toy,Donate to charity or give it away.
+Others,False,Shoes,-
+Others,False,Rechargeable batteries,Recycle using e-waste recycling bins.
+Others,False,Plants and horticultural waste,Garden waste is only collected from landed properties and not HDB estates under the National Recycling Programme.
+Others,False,Pens and pencils,-
+Others,False,Leftover medicine,-
+Others,False,Household batteries,"Singapore has imposed restrictions on the mercury content in mercury oxide, zinc carbon and alkaline batteries, so used household batteries can be safely discarded with normal waste - NEA."
+Others,False,Furniture,Donate to charity or ask town council cleaners to remove.
+Others,False,Food waste,-
+Others,False,Electrical and electronic items,Recycle using e-waste recycling bins.
+Others,False,Diapers and sanitary pads,-
+Others,False,Bags,Donate to charity or give it away.
+Others,True,Old clothes (in good condition),Donate to charity or give it away if possible. Bag before depositing into the recycling bin.
+Others,True,"Electronic waste (e.g. Used mobile phone, tablet, laptop etc)",Can be recycled at specific collection points
+Others,False,Spectacles,Donate to charity.
+Others,False,"Bulky waste (e.g. Furniture, standing fan etc)",Donate if it is in good conditionContact Town council to remove from your residential premises
+Others,False,Luggage bag,Donate if it is in good condition
+Others,False,Stationery - Pen and pencil,Donate if it is in good condition
+Paper,True,Greeting card,-
+Paper,True,Juice carton,Should be emptied. Please rinse if necessary and flatten if possible.
+Paper,True,Milk carton,Should be emptied. Please rinse if necessary and flatten if possible.
+Paper,True,Namecards,-
+Paper,True,Magazine,Glossy and non-glossy included.
+Paper,True,Red packet,-
+Paper,True,Paper receipts,-
+Paper,False,Wax paper,-
+Paper,False,Toilet paper,-
+Paper,False,Tissue paper,-
+Paper,False,Paper wrapper for food,-
+Paper,False,Paper towel,-
+Paper,False,Disposable paper cups and plates,-
+Paper,True,Newspaper,-
+Paper,False,Disposable chopsticks,-
+Paper,True,Tissue box,Please flatten if possible.
+Paper,True,Telephone directory,-
+Paper,True,Shredded paper,-
+Paper,True,Gift wrapping paper,-
+Paper,True,Printed paper,-
+Paper,True,Paper towel tubes and toilet roll tubes,-
+Paper,True,Writing paper,-
+Paper,True,Flyer,Glossy and non-glossy included.
+Paper,True,Printed paper (Glossy and non-glossy),
+Paper,True,Egg tray,-
+Paper,False,Wax paper,Dispose as general waste
+Paper,False,Disposable wooden chopstick,Dispose as general waste
+Paper,False,Toilet paper,Dispose as general waste
+Paper,False,Paper towel,Dispose as general waste
+Paper,False,Tissue paper,Dispose as general waste
+Paper,False,"Used paper disposables (e.g. paper cup, plate etc)",Dispose as general waste
+Paper,True,Paper bag,
+Paper,True,Tissue box,Please flatten
+Paper,True,Paper towel and toilet roll tube,
+Paper,True,"Beverage carton (e.g. milk, juice and drink packet)",Please empty and rinse when necessary. Please flatten
+Paper,True,Egg tray,
+Paper,True,Paper packaging (e.g. printed paper box etc),Please flatten
+Paper,True,Carton box,Please flatten
+Paper,False,"Paper packaging that are contaminated with food (eg pizza box, paper bag for pastries)",Dispose as general waste
+Paper,True,Paper receipt,
+Paper,True,Gift wrapping paper,
+Paper,True,Greeting card,
+Paper,True,Calendar,
+Paper,True,Namecard,
+Paper,True,Red packet,
+Paper,True,Envelope (With and without plastic window),
+Paper,True,Telephone directory,
+Paper,True,Book,Donate if it is in good condition
+Paper,True,Magazine (Glossy and non-glossy),
+Paper,True,Brochure (Glossy and non-glossy),
+Paper,True,Flyer (Glossy and non-glossy),
+Paper,True,Newspaper,
+Paper,True,Writing paper,
+Paper,True,Shredded paper,
+Paper,True,Envelope,With or without plastic window included.
+Paper,True,Calendar,-
+Paper,True,Drink packet,Should be emptied. Please rinse if necessary and flatten if possible.
+Paper,True,Carton box,Please flatten if possible.
+Paper,True,Cardboard box packaging,Please flatten if possible.
+Paper,True,Brochure,Glossy and non-glossy included.
+Paper,True,Books,Donate to charity or give it away if possible.
+Plastics,True,Toiletries containers,Should be emptied. Please rinse if necessary.
+Plastics,True,Plastic packaging (e.g. sliced bread bag and egg trays),Please empty contents
+Plastics,True,Plastic clothes hanger,
+Plastics,True,Non-polystyrene foam takeaway food container,Please empty and rinse when necessary
+Plastics,False,"Polystyrene foam product (e.g. Styrofoam cup, clam shell container)",Dispose as general waste
+Plastics,False,Plastic disposables - cutlery and crockery,Dispose as general waste
+Plastics,False,Drinking straw,Dispose as general waste
+Plastics,False,Oxo- and bio-degradable bags,Dispose as general waste
+Plastics,True,"Plastic film/flexible packaging (e.g. magazine wrapper, film packaging for packet drinks, bubble wrap etc.)",
+Plastics,False,Cassette and video tape,Dispose as general waste
+Plastics,False,Plastic packaging contaminated with food,Dispose as general waste
+Plastics,False,"Melamine products (e.g. Melamine cups, melamine plates etc)",Dispose as general waste
+Plastics,False,"Plastic packaging with foil (e.g. potato chip bags, empty blister pack etc.)",Dispose as general waste
+Plastics,True,"Plastic containers, trays and tubs for food (non-polystyrene)",Should be emptied. Please rinse if necessary.
+Plastics,True,Plastic bag (except for oxo- and bio-degradable bags),
+Plastics,True,"Plastic bottle/container - Non-food (e.g. shampoo, bodywash, facial cleanser, detergent etc)",Please empty and rinse when necessary
+Plastics,False,Takeaway food containers (styrofoam or PS plastics),Check the triangle plastic code usually printed on the container - 6 for PS.
+Plastics,False,Disposable cups (only for styrofoam or PS plastics),Check the triangle plastic code usually printed on the cup - 6 for PS.
+Plastics,True,Plastic bag,Should be clean and emptied.
+Plastics,False,Disposable cutlery and utensils,-
+Plastics,False,Straws,-
+Plastics,False,Cassette and video tapes,-
+Plastics,False,Plastic film packaging for food,-
+Plastics,True,CD and CD casing,
+Plastics,True,Magazine wrapper,-
+Plastics,True,Detergent bottle,Should be emptied. Please rinse if necessary.
+Plastics,True,CD and casing,-
+Plastics,True,Bread wrapper packaging,Should be clean and emptied.
+Plastics,True,Bottle for food,Should be emptied. Please rinse if necessary.
+Plastics,True,Bodywash and shampoo bottles,Should be emptied. Please rinse if necessary.
+Plastics,True,Beverage bottle,Should be emptied. Please rinse if necessary.
+Plastics,True,"Plastic bottle/container - Food or Beverage (e.g. PET, PP or PS bottles/container, carbonated and non-carbonated drinks etc)",Please empty and rinse when necessary
+Plastics,True,Disposable cups (only for PET and PP plastics),Should be emptied. Please rinse if necessary. Check the triangle plastic code usually printed on the cup - 1 for PET and 5 for PP.
+Plastics,False,Disposable plates and bowls,-
