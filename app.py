@@ -1,18 +1,14 @@
-import json
 from itertools import chain
-import os
+import shutil
+import uuid
+
 from werkzeug.datastructures import FileStorage
-
 from flask import Flask, render_template, request, jsonify
-from flask_cors import CORS, cross_origin
 
-from models.tutorials.image.imagenet.custom_classify_image import custom_classify_image
-from classify_trash.classify_recyclable_trash import classify_recyclable_trash
+from models.imagenet.custom_classify_image import custom_classify_image
+from classify_trash.classify_trash import classify
 
 app = Flask(__name__)
-
-# app.config['CORS_HEADERS'] = ['Content-Type', 'Access-Control-Allow-Origin']
-# cors = CORS(app, resources={r"/predict": {"origins": "https://trashy-recyclingmap.surge.sh/"}})
 
 
 @app.route("/", methods=['GET'])
@@ -22,7 +18,6 @@ def main():
 
 
 @app.route("/predict", methods=["POST"])
-@cross_origin(origin=os.environ['CORS_URL'], headers=['Content-Type','Access-Control-Allow-Origin'])
 def predict():
     """Makes prediction"""
     # Save client uploaded image to path
@@ -36,21 +31,45 @@ def predict():
 
     # Classify if recyclable or not
     image_labels = [i[1] for i in image_predictions]
-    image_labels_hack = image_labels[0]
 
     image_labels_melt = [i.split(',') for i in image_labels]
     image_labels_melt = list(chain.from_iterable(image_labels_melt))
+    image_labels_melt = [i.strip() for i in image_labels_melt]
 
-    recyclable_classification = classify_recyclable_trash(image_labels_melt)
+    classification = None
+    for i in image_labels_melt:
+        if not classification:
+            classification = classify(trash=i)
+
+    if classification.get("is_recyclable"):
+        waste_action = "Recyclable"
+    else:
+        waste_action = "Not Recyclable"
 
     return jsonify({
-	# json.dumps({
-        # "prediction": image_labels,
-        "prediction": image_labels_hack,
-        "material": recyclable_classification.get("material"),
-        "waste_action": recyclable_classification.get("action"),
-        "instruction": recyclable_classification.get("special_instructions")
+        "prediction": classification.get("identified_item"),
+        "material": classification.get("material"),
+        "waste_action": waste_action,
+        "instruction": classification.get("remarks")
     })
+
+
+@app.route("/report_wrong_identification", methods=["GET"])
+def report_wrong_identification():
+    src_file = 'images/client_image.jpeg'
+    new_file_name = "images/ident_" + str(uuid.uuid4()) + ".jpeg"
+    shutil.copy(src_file, new_file_name)
+
+    return "Thank you for your feedback"
+
+
+@app.route("/report_wrong_classification", methods=["GET"])
+def report_wrong_classification():
+    src_file = 'images/client_image.jpeg'
+    new_file_name = "images/class_" + str(uuid.uuid4()) + ".jpeg"
+    shutil.copy(src_file, new_file_name)
+
+    return "Thank you for your feedback"
 
 
 if __name__ == "__main__":

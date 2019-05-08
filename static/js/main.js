@@ -5,7 +5,6 @@ const fileInput = document.getElementById('file');
 const results = document.getElementById("results");
 
 const predict = async () => {
-
 	const files = fileInput.files;
 
 	if (fileInput.value != "") {
@@ -48,11 +47,11 @@ const renderResult = (result) => {
 	results.innerHTML= ``
 	results.innerHTML += `<div class="waste_action">This is ${result.waste_action}!</div>`;
 	if (result.instruction != "None") {
-		results.innerHTML += `<div class="waste_instruction">${capitalizeFirstLetter(result.instruction)}.`;
+		results.innerHTML += `<div class="waste_instruction">${capitalizeFirstLetter(result.instruction)}`;
 	}
 	results.innerHTML += `<br/>This looks like ${vowelTest(result.prediction)} ${result.prediction}.`;
 	
-	if ((result.material != "Unknown") && (result.material != "others")) {
+	if ((result.material != "Unknown") && (result.material != "others") && (result.material != "None")) {
 		results.innerHTML += `<br/><br/>Please recycle it as ${capitalizeFirstLetter(result.material)}.`;
 	}
 
@@ -62,6 +61,14 @@ const renderResult = (result) => {
 			<input type="submit" value="Find your nearest recycling bin" />
 			</form>`
 	}
+
+    results.innerHTML += `<br/><br/><form action="/report_wrong_identification">
+    <input type="submit" value="REPORT ITEM: This item is identified wrongly" />
+    </form>`
+
+    results.innerHTML += `<br/><br/><form action="/report_wrong_classification">
+    <input type="submit" value="REPORT ITEM: This item should / should not be recyclable" />
+    </form>`
 }
 
 // Show preview of image when uploaded

@@ -5,9 +5,19 @@ _image-feature-extraction/
 _test_images/
 _watson-waste-sorter/
 
-# Recycling data
+# Ignore all recycling raw data
 /classify_trash/data
+
+# Ignore all recycling formatted data 
 !/classify_trash/output/.gitkeep
+/classify_trash/output
+
+# Ignore all images that are not the client image
+!/images/client_image.jpeg
+/images/
+
+# Ignore exploratory notebooks
+# /notebooks
 
 apiKey.json
 
