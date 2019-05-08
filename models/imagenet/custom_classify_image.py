@@ -179,6 +179,8 @@ def get_softmax_vector(image):
     Returns:
       np.array which is a 1008 x 1 vector
     """
+    custom_maybe_download_and_extract()
+
     if not tf.gfile.Exists(image):
         tf.logging.fatal('File does not exist %s', image)
     image_data = tf.gfile.FastGFile(image, 'rb').read()
