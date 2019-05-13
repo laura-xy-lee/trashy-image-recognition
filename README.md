@@ -19,3 +19,26 @@ classification of trash.
 1. Run `python classify_trash/get_list_of_recyclables.py` to get list of recyclables from MEWR and zerowastesg.
 
 2. Run `python classify_trash/update_classification.py` to update classifications with customized labels.
+
+## To retrain model
+
+```
+python retrain.py --print_misclassified_test_images --image_dir ../retraining_images/ 
+```
+
+## To compare models
+
+* Tensorflow Inception V3 default model:
+
+    ```
+    python classify_image.py --image_file retraining_test_images/images.jpg
+    ```
+
+* Customized retrained model:
+
+    ```
+    cd retraining_code
+    
+    python label_image.py --graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt --input_layer=Placeholder --output_layer=final_result --image=../retraining_test_images/images.jpeg
+    ```
+    

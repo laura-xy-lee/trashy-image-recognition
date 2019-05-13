@@ -15,9 +15,13 @@ _watson-waste-sorter/
 # Ignore all images that are not the client image
 !/images/client_image.jpeg
 /images/
+/training_vectors/
+/retraining_images/
+/retraining_test_images/
+/retraining_test_images_Lisa/
 
 # Ignore exploratory notebooks
-# /notebooks
+notebooks/
 
 apiKey.json
 
